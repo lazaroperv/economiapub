@@ -1,0 +1,375 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Urbanist", sans-serif;
+}
+
+body{
+    display: flex;
+    background-color: #A60A6C;
+}
+header {
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    height: 100vh; /* Ocupa toda la altura de la ventana */
+    background-color: #A60A6C; /* Color de fondo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px;
+}
+
+.menu {
+    width: 100%;
+}
+
+nav {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    margin-bottom: 10px;
+}
+
+.logo img{
+    border-radius: 50%; 
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.5); 
+}
+
+.links {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #bf9bc0;
+    margin: 30px 40px;
+    display: inline-block;
+    text-align: start;
+    position: relative;
+    border-bottom: solid 1px transparent;
+    transition: all 350ms ease;
+    font-family: "Urbanist", sans-serif;
+    font-size: 20px;
+}
+
+.links a:hover{
+    border-bottom: solid 1px #ffffff;
+    color: #ffffff;
+}
+
+.menu nav .login{
+    margin-top: 30%;
+}
+
+.generalSectores {
+    height: 100vh; /* Asegura que ocupe toda la altura de la ventana */
+    overflow-y: scroll; /* Permite el scroll vertical */
+    scrollbar-width: thin; /* Firefox: hace la barra de desplazamiento más delgada */
+    scrollbar-color: transparent transparent; /* Firefox: establece el color de la barra y el fondo de la barra de desplazamiento */
+}
+
+/* Personalización de la barra de desplazamiento en navegadores WebKit */
+.generalSectores::-webkit-scrollbar {
+    width: 0; /* Oculta la barra de desplazamiento */
+    background: transparent; /* Fondo de la barra de desplazamiento */
+}
+
+.sectores {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan a la siguiente línea */
+    align-items: flex-start; /* Alinea los elementos al inicio del contenedor */
+    justify-content: center;
+    min-height: 100vh; /* Cambia height a min-height para que crezca según sea necesario */
+    width: 95%; /* Ajuste para ocupar un porcentaje del ancho disponible */
+    max-width: 1200px; /* Ancho máximo para evitar que crezca demasiado en pantallas grandes */
+    margin: 30px auto; /* Centrado y margen */
+    background-color: #ffffff;
+    border-radius: 20px;
+}
+
+.sectores h1 {
+    margin: 0; /* Elimina márgenes */
+    padding: 20px; /* Añade un poco de relleno */
+    width: 100%;
+    margin-top: 30px;
+    color: #A60A6C;
+    font-family: "Urbanist", sans-serif;
+    text-align: center; /* Centrado del título */
+}
+
+.primerApartado {
+    margin-top: 3%;
+    width: 100%; /* Asegura que el primer apartado ocupe todo el ancho del contenedor */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Centra los apartados */
+}
+
+.sectores .apartado {
+    display: flex;
+    flex-direction: column; /* Coloca el encabezado encima del icono */
+    align-items: center;
+    justify-content: center;
+    width: 150px; /* Ajuste del ancho del apartado */
+    height: 150px; /* Ajuste de altura para una mejor visualización */
+    margin: 20px; /* Ajusta el margen para que haya espacio entre los apartados */
+    background-color: #f3f6f8;
+    padding: 20px; /* Reducido para evitar espacios excesivos */
+    border-radius: 10px;
+    box-sizing: border-box; /* Asegura que padding no afecte el tamaño total */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transición para suavizar el efecto */
+}
+
+/* Estilos para los iconos y encabezados */
+.sectores .apartado h3 {
+    margin: 0; /* Elimina márgenes */
+    margin-bottom: 5px;
+    font-size: 18px;
+    color: #530033;
+    font-family: "Urbanist", sans-serif;
+    text-align: center;
+}
+
+.sectores .apartado i {
+    color: #530033;
+    font-size: 50px;
+    transition: transform 0.3s ease; /* Transición para suavizar el efecto en el icono */
+}
+
+/* Efecto dinámico al hacer hover en los apartados */
+.sectores .apartado:hover {
+    transform: scale(1.05); /* Agranda ligeramente el apartado */
+    box-shadow: 0 4px 15px rgba(166, 10, 108, 0.5); /* Añade sombra */
+}
+
+.sectores .apartado:hover i {
+    transform: scale(1.2); /* Agranda el icono dentro del apartado */
+}
+
+/* CARRERAS DE GRADO */
+
+.apartadoGrado {
+    background-color: #a0afbe; /* Color de fondo de cada apartado */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
+    width: 90%; /* Ancho de cada apartado */
+    margin: 10px 0; /* Espaciado vertical entre los apartados */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efecto suave para la transformación */
+    position: relative; /* Posición relativa para el efecto de hover */
+}
+
+.apartadoGrado:hover {
+    transform: translateY(-5px); /* Levanta el apartado al hacer hover */
+    box-shadow: 0 8px 30px rgba(166, 10, 108, 0.2); /* Añade sombra más pronunciada al hacer hover */
+}
+
+.apartadoGrado h3 {
+    margin: 0; /* Elimina márgenes */
+    color: #A60A6C; /* Color del texto del encabezado */
+    font-size: 20px; /* Tamaño del texto */
+    font-weight: bold;
+}
+
+.apartadoGrado p {
+    margin: 5px 0; /* Margen superior e inferior entre párrafos */
+    color: #ffffff; /* Color del texto del párrafo */
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.btnMostrarMas {
+    background-color: #A60A6C; /* Color de fondo del botón */
+    color: #ffffff; /* Color del texto del botón */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 10px 15px; /* Espaciado interno */
+    cursor: pointer; /* Cursor tipo puntero al pasar sobre el botón */
+    margin-top: 10px; /* Espacio superior del botón */
+    transition: background-color 0.3s ease; /* Efecto suave para el cambio de color */
+}
+
+.btnMostrarMas:hover {
+    background-color: #530033; /* Color más oscuro al hacer hover */
+}
+
+.btnMostrarMas, .infoExtra{
+    font-size: 18px;
+}
+
+.infoExtra {
+    display: none;
+    background-color: #a893a1; /* Color de fondo claro */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin-top: 15px; /* Espacio superior */
+    color: #333; /* Color del texto */
+}
+
+.infoExtra p {
+    line-height: 1.6; /* Mejora la legibilidad */
+    margin: 10px 0; /* Margen superior e inferior entre párrafos */
+    font-size: 19px;
+}
+
+.infoExtra h4 {
+    font-size: 20px; /* Tamaño del texto del subtítulo */
+    color: #A60A6C; /* Color del subtítulo */
+    margin-top: 15px; /* Margen superior */
+}
+
+.infoExtra ul {
+    list-style-type: disc; /* Estilo de lista con puntos */
+    padding-left: 20px; /* Espacio a la izquierda para la lista */
+}
+
+.infoExtra ul li {
+    margin: 5px 0; /* Margen entre elementos de lista */
+    line-height: 1.5; /* Espaciado en líneas de lista */
+    font-weight: bold;
+}
+
+/* Muestra la información extra al hacer click en el botón */
+.apartadoGrado.open .infoExtra {
+    display: block; /* Muestra el contenido extra */
+}
+
+
+/* --------------------------------------FORMULARIOS LOGIN Y CREAR USUARIO-------------------------------------- */
+
+.body {
+    height: 100vh;
+    display: flex; /* Activa Flexbox */
+    align-items: center; /* Centra verticalmente */
+    justify-content: center; /* Centra horizontalmente */
+    background-color: #fde4ff;
+}
+
+
+.form-login, .form-crearusuario {
+    position: relative;
+    display: flex;
+    width: 400px;
+    height: auto;
+    overflow: hidden;
+    margin: auto;
+    background: #ffbfe8;
+    border-radius: 10px;
+    padding: 30px;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.form-crearusuario{
+    margin-top: 20vh;
+}
+
+.wave {
+    position: absolute;
+    top: -20px;
+    width: 150x;
+    height: 100px; /* Ajustar para que cubra todo el ancho del formulario */
+    transform: rotate(180deg);
+    opacity: 0.3;
+
+}
+
+.waves{
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    width: 150x;
+    height: 100px; /* Ajustar para que cubra todo el ancho del formulario */
+    transform: rotate(180deg);
+    opacity: 0.3;
+
+}
+
+.form-login h1{
+    color: #410028;
+    margin: 10% 0;
+
+}
+
+.casilleros input::placeholder{
+    color: #6a4a5e;
+}
+
+.casilleross input::placeholder{
+    color: #6a4a5e;
+}
+
+.casilleros input, .casilleross input{
+    width: 100%;
+    padding: 10px;
+    outline: none;
+    border: none;
+    background: none;
+    margin: 20px 0;
+    border-bottom: 1px solid #410028;
+    font-size: 17px;
+    color: #410028;
+}
+
+.passwordforgot{
+    display: flex;
+    justify-content: end;
+    margin-top: 10px;
+}
+
+.passwordforgot:hover{
+    color: #A60A6C;
+    text-decoration: underline;
+}
+
+.botonusu input, .botonusuario input{
+    width: 40%;
+    margin: auto;
+    margin-top: 30px;
+    display: flex;
+    padding: 10px;
+    background-color: #690242; /* Color de fondo */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 17px;
+    transition: background-color 0.3s ease;
+}
+
+.botonusu input:hover{
+    color: #690242;
+    background-color: #ffe0f3;
+}
+
+.botonusuario input:hover{
+    color: #690242;
+    background-color: #ffe0f3;
+}
+
+.linkusuario {
+    margin-top: 30px;
+    text-align: center; /* Centra el texto */
+    color:#410028;
+
+}
+.linkusuario p{
+    margin-bottom: 5px;
+}
+.linkusuario a {
+    color: #A60A6C; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.linkusuario a:hover {
+    text-decoration: underline; /* Subrayar al pasar el ratón */
+}
+
